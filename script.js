@@ -9,7 +9,7 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
- let result = '';
+  let result = '';
 
     for (let [symbol, value] of romanSymbols) {
         while (num >= value) {
