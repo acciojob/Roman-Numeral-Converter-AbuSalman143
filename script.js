@@ -9,6 +9,22 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
+
+	 let result = '';
+    let index = 0;
+
+    while (num > 0) {
+        let [symbol, value] = obj[index];
+
+        while (num >= value) {
+            result += symbol;
+            num -= value;
+        }
+        
+        index++;
+    }
+
+    return result;
   //your code here
 
 }
